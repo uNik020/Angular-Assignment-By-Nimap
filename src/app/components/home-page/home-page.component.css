@@ -1,0 +1,101 @@
+/* General styles */
+.home-container {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .hero-section {
+    background: linear-gradient(to right, #e0eafc, #cfdef3); /* Placeholder gradient */
+    padding: 80px 0;
+    height: 60vh;
+  }
+  
+  .search-box {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .search-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .search-form input, .search-form select, .search-btn {
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  .search-btn {
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+  }
+  
+  .job-types {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .intro-section {
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .intro-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .intro-section p {
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Changed from 'auto' to '100%' */
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden; /* Prevent background scrolling */
+}
+
+.modal-content {
+    background-color: white;
+    width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1010;
+    max-height: calc(100vh - 100px); /* Set maximum height */
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+/* Add this class to prevent body scrolling */
+.no-scroll {
+    overflow-y: hidden;
+}
+  
+  /* Modal header with close button */
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }

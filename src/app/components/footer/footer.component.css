@@ -1,0 +1,19 @@
+
+
+.subscribe-section {
+    padding: 30px;
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .subscribe-section input {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+  }
+  
+  .subscribe-section button {
+    padding: 10px 20px;
+  }

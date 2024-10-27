@@ -1,0 +1,46 @@
+<div class="home-container">
+    <section class="hero-section">
+      <div class="search-box">
+        <h2><i>I’m looking for..</i></h2>
+        <div class="search-form">
+          <input type="text" placeholder="Enter a Job Description" />
+          <select>
+            <option value="" disabled selected>Select your location</option>
+            <!--more location options here -->
+            <option value="">Mumbai</option>
+            <option value="">Navi Mumbai</option>
+            <option value="">Thane</option>
+            <option value="">Palghar</option>
+            <option value="">Nashik</option>
+          </select>
+          <button class="btn search-btn">Search</button>
+        </div>
+        <div class="job-types">
+          <label><input type="checkbox"> Full Time</label>
+          <label><input type="checkbox"> Part Time / Casual / Freelance</label>
+        </div>
+
+      </div>
+      <br>
+      <button class="btn btn-primary" (click)="openRegisterForm()">Register</button>
+    </section>
+  
+    <section class="intro-section">
+      <h2>We’re leaders in</h2>
+      <h3>Creative Digital Recruitment</h3>
+      <p>Based in Surry Hills, we are surrounded by creativity and that reflects the type of jobs we recruit for.</p>
+      <button class="btn btn-info">Find out more about us!</button>
+    </section>
+  
+  </div>
+
+  <!-- Registration form popup overlay -->
+  <div *ngIf="showRegisterForm" class="modal-overlay">
+    <div class="modal-content">
+      <div class="modal-body">
+        <!-- Embedding your User Registration component here -->
+        <app-user-registration (closeForm)="closeRegisterForm()"></app-user-registration>
+      </div>
+    </div>
+  </div>
+  

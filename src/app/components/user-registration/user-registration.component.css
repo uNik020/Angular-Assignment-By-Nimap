@@ -1,0 +1,90 @@
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    margin: auto;
+    border: none;
+    border-radius: 50%;
+    background: rgb(94, 94, 246);
+    font-size: 28px;
+    cursor: pointer;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .btn-submit {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn-submit:disabled {
+    background-color: #d3d3d3;
+    cursor: not-allowed;
+  }
+  
+  .age-display {
+    margin-top: 10px;
+  }
+
+    /* Modal header with close button */
+.modal-header {
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;  
+}
+  
+.form-container{
+    padding: 20px;
+}
+.text{
+    display: flex;
+    color: white;
+    padding: 20px;
+}
+.h4{
+    color: white;
+}
+.error{
+    color: red;
+}
+
+.tag-container {
+    margin-top: 10px;
+  }
+  
+  .tag {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+  
+  .tag button {
+    background: none;
+    border: none;
+    color: white;
+    margin-left: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
